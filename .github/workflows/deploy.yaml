@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: 
   push:
     branches:
-    - main
+    - test
 jobs:
   Deploy:
     name: Copy to deploy branch
@@ -22,7 +22,7 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git fetch                         # fetch branches
-          git checkout $TARGET_BRANCH       # checkout to your branch
+          git checkout -b $TARGET_BRANCH       # checkout to your branch
           git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
           git add -A
           git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
