@@ -5,7 +5,6 @@ Bootstrap web application
 * Github account with Github pages set up against repo
 * Deploy from gh-pages branch
 
-
 ## Run locally
 Run with `npm start`
 Go to http://localhost:8080
