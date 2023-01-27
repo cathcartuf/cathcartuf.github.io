@@ -2,6 +2,7 @@
   "name": "Cathcart UF",
   "version": "0.1.0",
   "homepage": "https://cathcartuf.github.io/",
+  "private": "true",
   "scripts": {
     "start": "webpack serve --mode development",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +11,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6"
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
