@@ -9,7 +9,7 @@ jobs:
     name: Copy to deploy branch
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         name: copy
         env:
           SRC_FOLDER_PATH: 'src'
